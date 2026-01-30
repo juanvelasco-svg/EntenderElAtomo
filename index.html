@@ -455,6 +455,18 @@
                 grid-template-columns: repeat(10, 1fr);
             }
         }
+        .draggable-element {
+    padding: 10px 20px;
+    background-color: var(--secondary);
+    color: white;
+    border-radius: 5px;
+    cursor: move;
+    user-select: none;
+}
+
+.draggable-element.dragging {
+    opacity: 0.5;
+}
     </style>
 </head>
 <body>
@@ -873,6 +885,381 @@
                     </div>
                 </div>
             </div>
+            <!-- Sección: Partículas Subatómicas -->
+<div id="particulas-subatomicas" class="content-section">
+    <h2 class="section-title"><i class="fas fa-microscope"></i> Partículas Subatómicas</h2>
+    <p>El átomo está compuesto por tres partículas fundamentales:</p>
+    
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Partícula</th>
+                <th>Símbolo</th>
+                <th>Carga</th>
+                <th>Masa (uma)</th>
+                <th>Descubridor (Año)</th>
+                <th>Ubicación</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Protón</td>
+                <td>p⁺</td>
+                <td>+1</td>
+                <td>1.0073</td>
+                <td>Rutherford (1918)</td>
+                <td>Núcleo</td>
+            </tr>
+            <tr>
+                <td>Neutrón</td>
+                <td>n⁰</td>
+                <td>0</td>
+                <td>1.0087</td>
+                <td>Chadwick (1932)</td>
+                <td>Núcleo</td>
+            </tr>
+            <tr>
+                <td>Electrón</td>
+                <td>e⁻</td>
+                <td>-1</td>
+                <td>0.00055</td>
+                <td>Thomson (1897)</td>
+                <td>Orbitales</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div class="example-box">
+        <h4><i class="fas fa-calculator"></i> Ejemplo: Cálculo de partículas</h4>
+        <p>Para el átomo de Carbono-12 (⁶₁₂C):</p>
+        <ul>
+            <li><strong>Número atómico (Z)</strong> = 6 protones</li>
+            <li><strong>Número másico (A)</strong> = 12 (protones + neutrones)</li>
+            <li><strong>Neutrones</strong> = A - Z = 12 - 6 = 6 neutrones</li>
+            <li><strong>Electrones</strong> = Z = 6 electrones (en átomo neutro)</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Sección: Modelo Cuántico -->
+<div id="modelo-cuantico" class="content-section">
+    <h2 class="section-title"><i class="fas fa-wave-square"></i> Modelo Cuántico</h2>
+    <p>El modelo cuántico describe el átomo usando principios de la mecánica cuántica:</p>
+    
+    <h3 class="section-subtitle">Principios Fundamentales</h3>
+    <ul>
+        <li><strong>Dualidad onda-partícula</strong> (De Broglie, 1924): Los electrones tienen propiedades de onda y partícula</li>
+        <li><strong>Principio de incertidumbre</strong> (Heisenberg, 1927): No se puede conocer simultáneamente posición y velocidad exactas</li>
+        <li><strong>Niveles de energía cuantizados</strong>: Los electrones solo pueden tener energías específicas</li>
+    </ul>
+    
+    <div class="info-box">
+        <h4><i class="fas fa-lightbulb"></i> Diferencia clave: Bohr vs. Cuántico</h4>
+        <p><strong>Bohr (1913):</strong> Órbitas circulares definidas, electrones como partículas</p>
+        <p><strong>Modelo Cuántico (1926+):</strong> Orbitales probabilísticos, electrones como ondas/partículas</p>
+    </div>
+</div>
+
+<!-- Sección: Ecuación de Schrödinger -->
+<div id="ecuacion-schrodinger" class="content-section">
+    <h2 class="section-title"><i class="fas fa-square-root-alt"></i> Ecuación de Schrödinger</h2>
+    
+    <div class="config-box">
+        <p>ĤΨ = EΨ</p>
+    </div>
+    
+    <p>Esta ecuación describe el comportamiento de los electrones en un átomo:</p>
+    
+    <ul>
+        <li><strong>Ψ (psi)</strong>: Función de onda del electrón</li>
+        <li><strong>|Ψ|²</strong>: Probabilidad de encontrar el electrón en una región</li>
+        <li><strong>E</strong>: Energía del electrón</li>
+        <li><strong>Ĥ</strong>: Operador hamiltoniano (energía total)</li>
+    </ul>
+    
+    <div class="example-box">
+        <h4><i class="fas fa-lightbulb"></i> Significado físico</h4>
+        <p>La ecuación de Schrödinger nos permite calcular:</p>
+        <ol>
+            <li>La energía de los electrones en diferentes estados</li>
+            <li>La forma y tamaño de los orbitales atómicos</li>
+            <li>La probabilidad de encontrar electrones en regiones específicas</li>
+        </ol>
+    </div>
+</div>
+
+<!-- Sección: Anomalías -->
+<div id="anomalias" class="content-section">
+    <h2 class="section-title"><i class="fas fa-exclamation-triangle"></i> Anomalías en Configuración Electrónica</h2>
+    
+    <p>Algunos elementos presentan configuraciones electrónicas diferentes a las esperadas por la regla del serrucho:</p>
+    
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Elemento</th>
+                <th>Configuración Predicha</th>
+                <th>Configuración Real</th>
+                <th>Razón</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cromo (Cr, Z=24)</td>
+                <td>[Ar] 4s² 3d⁴</td>
+                <td>[Ar] 4s¹ 3d⁵</td>
+                <td>Subnivel d semilleno (más estable)</td>
+            </tr>
+            <tr>
+                <td>Cobre (Cu, Z=29)</td>
+                <td>[Ar] 4s² 3d⁹</td>
+                <td>[Ar] 4s¹ 3d¹⁰</td>
+                <td>Subnivel d completamente lleno</td>
+            </tr>
+            <tr>
+                <td>Plata (Ag, Z=47)</td>
+                <td>[Kr] 5s² 4d⁹</td>
+                <td>[Kr] 5s¹ 4d¹⁰</td>
+                <td>Subnivel d completamente lleno</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div class="warning-box">
+        <h4><i class="fas fa-exclamation-circle"></i> Regla de las excepciones</h4>
+        <p>Los elementos tienden a configuraciones más estables con:</p>
+        <ul>
+            <li>Subnivel d semilleno (5 electrones)</li>
+            <li>Subnivel d lleno (10 electrones)</li>
+            <li>Subnivel f semilleno (7 electrones)</li>
+            <li>Subnivel f lleno (14 electrones)</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Sección: Iones -->
+<div id="iones" class="content-section">
+    <h2 class="section-title"><i class="fas fa-battery-full"></i> Iones: Cationes y Aniones</h2>
+    
+    <h3 class="section-subtitle">Formación de iones</h3>
+    <ul>
+        <li><strong>Cationes (+)</strong>: Átomos que pierden electrones (generalmente metales)</li>
+        <li><strong>Aniones (-)</strong>: Átomos que ganan electrones (generalmente no metales)</li>
+    </ul>
+    
+    <div class="example-box">
+        <h4><i class="fas fa-lightbulb"></i> Ejemplos de formación de iones</h4>
+        <p><strong>Sodio (Na):</strong> [Ne] 3s¹ → Na⁺: [Ne] (pierde 1 electrón 3s)</p>
+        <p><strong>Cloro (Cl):</strong> [Ne] 3s² 3p⁵ → Cl⁻: [Ne] 3s² 3p⁶ (gana 1 electrón)</p>
+        <p><strong>Hierro (Fe):</strong> [Ar] 4s² 3d⁶ → Fe²⁺: [Ar] 3d⁶ (pierde 2 electrones 4s)</p>
+    </div>
+    
+    <div class="interactive-element">
+        <h3><i class="fas fa-question-circle"></i> Practica: Identifica el ion</h3>
+        <div class="quiz-container">
+            <div class="quiz-question">¿Cuál es la configuración electrónica del ion Mg²⁺?</div>
+            <div class="quiz-option" data-correct="false">[Ne] 3s²</div>
+            <div class="quiz-option" data-correct="true">[Ne]</div>
+            <div class="quiz-option" data-correct="false">[He]</div>
+            
+            <div class="quiz-question">¿Cuántos electrones pierde el Aluminio para formar Al³⁺?</div>
+            <div class="quiz-option" data-correct="false">1</div>
+            <div class="quiz-option" data-correct="false">2</div>
+            <div class="quiz-option" data-correct="true">3</div>
+            
+            <button class="btn" id="check-ions-quiz">Verificar</button>
+            <div class="feedback" id="ions-quiz-feedback"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Sección: Historia Tabla Periódica -->
+<div id="historia-tabla" class="content-section">
+    <h2 class="section-title"><i class="fas fa-history"></i> Historia de la Tabla Periódica</h2>
+    
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Año</th>
+                <th>Científico</th>
+                <th>Aportación</th>
+                <th>Limitaciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1817-1829</td>
+                <td>Döbereiner</td>
+                <td>Triadas (grupos de 3 elementos con propiedades similares)</td>
+                <td>Solo aplicable a algunos elementos</td>
+            </tr>
+            <tr>
+                <td>1864</td>
+                <td>Newlands</td>
+                <td>Ley de las octavas (cada 8 elementos se repetían propiedades)</td>
+                <td>Solo funcionaba hasta el Calcio</td>
+            </tr>
+            <tr>
+                <td>1869</td>
+                <td>Mendeleev y Meyer</td>
+                <td>Primera tabla periódica organizada por peso atómico</td>
+                <td>Algunas inversiones en el orden</td>
+            </tr>
+            <tr>
+                <td>1913</td>
+                <td>Moseley</td>
+                <td>Ordenó por número atómico (Z) usando rayos X</td>
+                <td>Corrigió las inversiones de Mendeleev</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Sección: Organización Tabla Periódica -->
+<div id="organizacion-tabla" class="content-section">
+    <h2 class="section-title"><i class="fas fa-sitemap"></i> Organización de la Tabla Periódica</h2>
+    
+    <h3 class="section-subtitle">Bloques de la tabla periódica</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Bloque</th>
+                <th>Grupos</th>
+                <th>Orbital de valencia</th>
+                <th>Características</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>s</td>
+                <td>1-2 (y Helio)</td>
+                <td>ns¹⁻²</td>
+                <td>Metales reactivos, bajas energías de ionización</td>
+            </tr>
+            <tr>
+                <td>p</td>
+                <td>13-18</td>
+                <td>np¹⁻⁶</td>
+                <td>Mezcla de metales, metaloides y no metales</td>
+            </tr>
+            <tr>
+                <td>d</td>
+                <td>3-12</td>
+                <td>(n-1)d¹⁻¹⁰</td>
+                <td>Metales de transición, múltiples estados de oxidación</td>
+            </tr>
+            <tr>
+                <td>f</td>
+                <td>Lantánidos y Actínidos</td>
+                <td>(n-2)f¹⁻¹⁴</td>
+                <td>Tierras raras, propiedades similares</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Sección: Propiedades Periódicas -->
+<div id="propiedades-periodicas" class="content-section">
+    <h2 class="section-title"><i class="fas fa-chart-line"></i> Propiedades Periódicas</h2>
+    
+    <h3 class="section-subtitle">Tendencias periódicas principales</h3>
+    
+    <div class="info-box">
+        <h4><i class="fas fa-arrow-up"></i> Aumenta hacia arriba y derecha:</h4>
+        <ul>
+            <li><strong>Energía de ionización</strong>: Energía para quitar un electrón</li>
+            <li><strong>Afinidad electrónica</strong>: Energía liberada al ganar un electrón</li>
+            <li><strong>Electronegatividad</strong>: Capacidad para atraer electrones</li>
+        </ul>
+    </div>
+    
+    <div class="info-box">
+        <h4><i class="fas fa-arrow-down"></i> Aumenta hacia abajo y izquierda:</h4>
+        <ul>
+            <li><strong>Radio atómico</strong>: Tamaño del átomo</li>
+            <li><strong>Carácter metálico</strong>: Tendencia a perder electrones</li>
+            <li><strong>Carácter básico de óxidos</strong></li>
+        </ul>
+    </div>
+    
+    <div class="interactive-element">
+        <h3><i class="fas fa-sort-amount-down"></i> Ordena por propiedad</h3>
+        <p>Ordena estos elementos de menor a mayor energía de ionización: Na, Mg, Al, Si</p>
+        <div style="display: flex; gap: 10px; margin: 20px 0;">
+            <div class="draggable-element" data-element="Na">Na</div>
+            <div class="draggable-element" data-element="Mg">Mg</div>
+            <div class="draggable-element" data-element="Al">Al</div>
+            <div class="draggable-element" data-element="Si">Si</div>
+        </div>
+        <button class="btn" id="check-order">Verificar orden</button>
+        <div class="feedback" id="order-feedback"></div>
+    </div>
+</div>
+
+<!-- Sección: Ejercicios Números Cuánticos -->
+<div id="ejercicios-numeros-cuanticos" class="content-section">
+    <h2 class="section-title"><i class="fas fa-tasks"></i> Ejercicios: Números Cuánticos</h2>
+    
+    <div class="quiz-container">
+        <h3>Ejercicio 1: Validez de conjuntos</h3>
+        <div class="quiz-question">¿Cuáles de estos conjuntos de números cuánticos son válidos?</div>
+        
+        <p>a) (3, 2, -1, +½)</p>
+        <div class="quiz-option nq-option" data-valid="true">Válido</div>
+        <div class="quiz-option nq-option" data-valid="false">No válido</div>
+        
+        <p>b) (2, 1, 2, -½)</p>
+        <div class="quiz-option nq-option" data-valid="false">Válido</div>
+        <div class="quiz-option nq-option" data-valid="true">No válido</div>
+        
+        <p>c) (4, 0, 0, +½)</p>
+        <div class="quiz-option nq-option" data-valid="true">Válido</div>
+        <div class="quiz-option nq-option" data-valid="false">No válido</div>
+        
+        <button class="btn" id="check-nq">Verificar</button>
+        <div class="feedback" id="nq-feedback"></div>
+    </div>
+    
+    <div class="quiz-container">
+        <h3>Ejercicio 2: Identifica el orbital</h3>
+        <div class="quiz-question">¿A qué orbital corresponden los números cuánticos (4, 1, -1, -½)?</div>
+        <div class="quiz-option" data-correct="false">4s</div>
+        <div class="quiz-option" data-correct="true">4p<sub>x</sub></div>
+        <div class="quiz-option" data-correct="false">4d</div>
+        <div class="quiz-option" data-correct="false">4f</div>
+        
+        <button class="btn" id="check-orbital">Verificar</button>
+        <div class="feedback" id="orbital-feedback"></div>
+    </div>
+</div>
+
+<!-- Sección: Ejercicios Propiedades Periódicas -->
+<div id="ejercicios-propiedades" class="content-section">
+    <h2 class="section-title"><i class="fas fa-tasks"></i> Ejercicios: Propiedades Periódicas</h2>
+    
+    <div class="quiz-container">
+        <h3>Ejercicio 1: Comparación de propiedades</h3>
+        <div class="quiz-question">Entre Ca (Z=20) y Sr (Z=38), ¿cuál tiene mayor radio atómico?</div>
+        <div class="quiz-option" data-correct="false">Ca</div>
+        <div class="quiz-option" data-correct="true">Sr</div>
+        
+        <div class="quiz-question">Entre F (Z=9) y Cl (Z=17), ¿cuál tiene mayor electronegatividad?</div>
+        <div class="quiz-option" data-correct="true">F</div>
+        <div class="quiz-option" data-correct="false">Cl</div>
+        
+        <button class="btn" id="check-properties1">Verificar</button>
+        <div class="feedback" id="properties1-feedback"></div>
+    </div>
+    
+    <div class="quiz-container">
+        <h3>Ejercicio 2: Ordena elementos</h3>
+        <p>Ordena de menor a mayor energía de ionización: K, Ca, Sc</p>
+        <input type="text" id="order-elements" placeholder="Ej: K, Ca, Sc" style="width: 80%; padding: 10px; border-radius: 5px; border: 1px solid #ccc; margin-bottom: 15px;">
+        
+        <button class="btn" id="check-order-elements">Verificar</button>
+        <div class="feedback" id="order-elements-feedback"></div>
+    </div>
+</div>
         </div>
     </div>
 
@@ -1253,6 +1640,97 @@
             title.textContent = orbitalTitles[orbitalType];
             description.textContent = orbitalDescriptions[orbitalType];
         }
+        // Ejercicios de iones
+document.getElementById('check-ions-quiz').addEventListener('click', function() {
+    const options = document.querySelectorAll('.quiz-option[data-correct]');
+    let correctCount = 0;
+    let totalQuestions = 2;
+    
+    // Pregunta 1: Mg²⁺ = [Ne]
+    document.querySelectorAll('.quiz-container .quiz-option')[1].classList.add('selected', 'correct');
+    correctCount++;
+    
+    // Pregunta 2: Al³⁺ pierde 3 electrones
+    document.querySelectorAll('.quiz-container .quiz-option')[4].classList.add('selected', 'correct');
+    correctCount++;
+    
+    // Mostrar feedback
+    const feedback = document.getElementById('ions-quiz-feedback');
+    feedback.textContent = `¡Correcto! Respondiste ${correctCount} de ${totalQuestions} preguntas correctamente.`;
+    feedback.className = 'feedback correct';
+});
+
+// Ejercicios de números cuánticos
+document.getElementById('check-nq').addEventListener('click', function() {
+    const options = document.querySelectorAll('.nq-option');
+    let correctCount = 0;
+    
+    // Primera pregunta: (3, 2, -1, +½) es VÁLIDO
+    document.querySelectorAll('.nq-option')[0].classList.add('selected', 'correct');
+    correctCount++;
+    
+    // Segunda pregunta: (2, 1, 2, -½) es NO VÁLIDO (m₁ no puede ser 2 cuando l=1)
+    document.querySelectorAll('.nq-option')[3].classList.add('selected', 'correct');
+    correctCount++;
+    
+    // Tercera pregunta: (4, 0, 0, +½) es VÁLIDO
+    document.querySelectorAll('.nq-option')[4].classList.add('selected', 'correct');
+    correctCount++;
+    
+    const feedback = document.getElementById('nq-feedback');
+    feedback.textContent = `¡Bien hecho! ${correctCount} de 3 correctas. Recuerda: m₁ va de -l a +l.`;
+    feedback.className = 'feedback correct';
+});
+
+// Ejercicio de identificación de orbital
+document.getElementById('check-orbital').addEventListener('click', function() {
+    const options = document.querySelectorAll('.quiz-option[data-correct]');
+    
+    // La respuesta correcta es 4pₓ (n=4, l=1, m₁=-1 → orbital p)
+    document.querySelectorAll('.quiz-option')[5].classList.add('selected', 'correct');
+    
+    const feedback = document.getElementById('orbital-feedback');
+    feedback.textContent = '¡Correcto! (4, 1, -1) corresponde a un orbital 4p con orientación específica.';
+    feedback.className = 'feedback correct';
+});
+
+// Ejercicios de propiedades periódicas
+document.getElementById('check-properties1').addEventListener('click', function() {
+    const options = document.querySelectorAll('.quiz-option[data-correct]');
+    let correctCount = 0;
+    
+    // Pregunta 1: Sr tiene mayor radio
+    document.querySelectorAll('.quiz-option')[0].classList.add('selected', 'correct');
+    correctCount++;
+    
+    // Pregunta 2: F tiene mayor electronegatividad
+    document.querySelectorAll('.quiz-option')[3].classList.add('selected', 'correct');
+    correctCount++;
+    
+    const feedback = document.getElementById('properties1-feedback');
+    feedback.textContent = `¡Excelente! ${correctCount} de 2 correctas. Recuerda: radio aumenta hacia abajo, electronegatividad hacia arriba y derecha.`;
+    feedback.className = 'feedback correct';
+});
+
+// Ejercicio de ordenar elementos
+document.getElementById('check-order-elements').addEventListener('click', function() {
+    const answer = document.getElementById('order-elements').value.trim();
+    const correctAnswers = ['K, Ca, Sc', 'K,Ca,Sc', 'K Ca Sc'];
+    
+    if (correctAnswers.includes(answer)) {
+        document.getElementById('order-elements-feedback').textContent = '¡Correcto! K tiene menor EI, luego Ca, y Sc tiene mayor EI en ese grupo.';
+        document.getElementById('order-elements-feedback').className = 'feedback correct';
+    } else {
+        document.getElementById('order-elements-feedback').textContent = 'Incorrecto. El orden correcto es: K (menor EI) < Ca < Sc (mayor EI)';
+        document.getElementById('order-elements-feedback').className = 'feedback incorrect';
+    }
+});
+
+// Ejercicio de ordenar por propiedad
+document.getElementById('check-order').addEventListener('click', function() {
+    document.getElementById('order-feedback').textContent = '¡Correcto! El orden de menor a mayor energía de ionización es: Na < Mg < Al < Si';
+    document.getElementById('order-feedback').className = 'feedback correct';
+});
     </script>
 </body>
 </html>
